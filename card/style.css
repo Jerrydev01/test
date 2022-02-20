@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(8, 8, 43);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: rgb(190, 184, 184);
+}
+
+p{
+    color: rgba(245, 245, 245, 0.541);
+    font-size: 1rem;
+}
+
+ section{
+    margin: 200px 0 200px 0;
+ }
+
+ hr{
+    border: .5px solid rgba(245, 245, 245, 0.075);
+    border-radius: 1rem;
+}
+
+.card{
+    width: 300px;
+    /* height: 400px; */
+    margin: auto;
+}
+
+.change {
+    color: aqua;
+}
+
+.bg{
+    background-image: url(/card/images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 260px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.img {
+    padding: 20px;
+    border-radius: 1rem;
+    height: 450px;
+    background-color: rgb(9, 9, 46);
+    box-shadow: inset 0 -3rem 7rem rgb(19, 19, 70),
+                0 0 0 3px rgb(14, 14, 75),
+                0.3rem 0.3rem 1.5rem rgb(20, 20, 70);
+    transition: transform 0.5s;
+}
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.avatar{
+    margin-bottom: 200px;
+    display: flex;
+    padding: 10px 0;
+}
+
+.avatar-img>img {
+    height: 40px;
+    border: 2px solid rgba(245, 245, 245, 0.541);
+    border-radius: 50px;
+}
+
+.p{
+    margin-left: 20px;
+
+}
+
+/* active state */
+.bg:hover{
+    background-image: url("/card/images/icon-view.svg")
+    , url("/card/images/image-equilibrium.jpg");
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 30px, cover;
+    background-position: center;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+h3:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.jf:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.img:hover {
+    transform: translateY(10px);
+    /* transform: scale(1.2); */
+}
+
+/* mobile view */
+
+
