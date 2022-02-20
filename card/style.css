@@ -36,7 +36,7 @@ p{
 }
 
 .bg{
-    background-image: url(/images/image-equilibrium.jpg);
+    background-image: url(../images/image-equilibrium.jpg);
     background-position: center;
     background-size: cover;
     width: 260px;
@@ -81,7 +81,7 @@ p{
 
 /* active state */
 .bg:hover{
-    background-image: url("./images/icon-view.svg")
+    background-image: url("card/images/icon-view.svg")
     , url("images/image-equilibrium.jpg");
     background-color: aqua;
     background-repeat: no-repeat;
