@@ -91,7 +91,7 @@ button:hover{
     
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     div {
         display: block;
         margin: 10px 0;
