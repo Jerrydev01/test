@@ -323,7 +323,10 @@ i {
   width: 100%;
 
 }
-  
+ .hero-img>img {
+  Width: 60vw;
+
+}
 
   .item{
     flex-basis: 1;
