@@ -66,9 +66,9 @@ h1 {
   font-size: 1.8rem;
 }
 
-h3, .container-fluid{
+h2, .container-fluid{
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 p, ul {
@@ -153,7 +153,7 @@ nav {
   border-radius: 1.2rem;
 }
 
-.grow>h3, .grow>h3+p {
+.grow>h2, .grow>h2+p {
   padding: 20px 0;
 }
 
@@ -173,7 +173,7 @@ nav {
 }
 
 
-.sec5>h3 {
+.sec5>h2 {
   padding-bottom: 20px;
 }
 
@@ -312,6 +312,14 @@ i {
 
   i {
     margin-bottom: 50px;
+  }
+
+.hero-pg{
+  padding-right: 100px;
+}
+
+  .item{
+    flex-basis: 1;
   }
 }
 
