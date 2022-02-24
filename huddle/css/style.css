@@ -317,6 +317,10 @@ i {
 .hero-pg{
   padding-right: 100px;
 }
+  
+.bg-hero>img {
+    min-width: 600px;
+  }
 
   .item{
     flex-basis: 1;
