@@ -327,12 +327,12 @@ i {
   }
 
 .hero-pg{
-  padding-right: 100px;
+  padding-right: 50px;
   width: 100%;
 
 }
  .bg-hero>img {
-  Width: 800px;
+  max-Width: 40vw;
 
 }
 
