@@ -248,8 +248,12 @@ i {
 
 @media (min-width: 800px) {
 
-  .h1 {
+  h1 {
    font-size: 3.5rem;
+  }
+
+  h1, h2 {
+  font-weight: 800;
   }
   .hero {
     display: flex;
