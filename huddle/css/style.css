@@ -323,7 +323,7 @@ i {
 }
   
 .bg-hero>img {
-    min-width: 600px;
+    width: 100%;
   }
 
   .item{
