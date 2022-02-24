@@ -320,12 +320,10 @@ i {
 
 .hero-pg{
   padding-right: 100px;
+  width: 100%;
 
 }
   
-.bg-hero>img {
-    width: 50rem;
-  }
 
   .item{
     flex-basis: 1;
