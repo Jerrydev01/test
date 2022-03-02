@@ -1,0 +1,355 @@
+/* css reset */
+
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* end of css reset */
+
+html {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-color: hsla(264, 100%, 61%, 0.055);
+}
+
+p {
+    color: hsl(270, 9%, 75%);
+}
+
+.sec-zeus {
+    display: block;
+    height: 60rem;
+    width: 50vw;
+    background: linear-gradient(180deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-right-radius: 100%;
+}
+
+.chat {
+    max-width: 75%;
+    background-color: hsl(270, 20%, 96%);
+    position: absolute;
+    top: 5%;
+    left: calc(25%/2);
+    border: 10px solid white;
+    border-radius: 4rem;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.empty {
+    background-color: white;
+    height: 40px;
+    width: 60%;
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: -10px;
+    border-radius: 5rem;
+}
+
+.profile {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(180deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.min-profile {
+    display: grid;
+    grid-template-columns: 10px 1fr 5fr 1fr;
+    gap: 5px;
+    font-size: 1rem;
+    color: white;
+    padding: 30px 10px 0 10px;
+}
+
+i {
+    font-size: 2rem;
+    padding-top: 20px;
+    font-family: 700;
+    color: hsl(276, 100%, 81%);
+}
+
+.profile-image {
+    margin: 5px;
+    width: 40px;
+    padding-top: 5px;
+}
+
+.profile-header {
+    padding: 1.2rem 1rem 0 1rem;
+    color: hsl(276, 100%, 92%);
+}
+
+.p-header {
+    padding: 1rem;
+}
+
+.chat-left,
+.chat-right>p {
+    font-size: 1.2rem;
+    width: 70%;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(0, 0%, 91%);
+    box-shadow: 0 0 500px hsl(0, 0%, 91%);
+    padding: 8px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.chat-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chat-right>p {
+    margin-top: 0;
+    margin-right: 0.5rem;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.dog-img {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.dog-img>img {
+    object-fit: contain;
+    width: 50px;
+    padding: 5px;
+    border-radius: 2rem;
+}
+
+.date {
+    background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: hsl(270, 13%, 91%);
+    font-size: 1.2rem;
+    box-shadow: 0 0 500px hsl(0, 0%, 91%);
+    width: fit-content;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 10px;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    /* display grid */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    margin-left: 7rem;
+    width: fit-content;
+    border: none;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+button>i {
+    padding: 0;
+}
+
+.text-sec {
+    display: flex;
+    justify-content: right;
+    min-width: 80%;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 1rem 0.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.icon-circle>i {
+    font-size: 15px;
+    padding: 0;
+}
+
+.dollar {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.second-sec {
+    margin-top: 2rem;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.main-heading {
+    font-size: 3rem;
+}
+
+footer {
+    margin-top: 5rem;
+    background-color: hsl(264, 100%, 61%);
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: rgb(200, 255, 0);
+}
+
+
+/* desktop view */
+
+@media screen and (min-width: 900px) {
+    .profile {
+        height: 8.5rem;
+    }
+    .chat-left,
+    .chat-right,
+    .chat-right>p {
+        font-size: 0.8rem;
+    }
+    .date {
+        padding: 0.5rem;
+    }
+    .desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-zeus {
+        display: inline-block;
+        height: 55rem;
+        width: 40%;
+        padding-inline: 20px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin-left: -150px;
+    }
+    .chat {
+        max-width: 30rem;
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
+    .second-sec {
+        text-align: left;
+        flex: 1;
+        margin: 0 15rem 0 30rem;
+    }
+    footer {
+        display: none;
+    }
+}
