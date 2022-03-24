@@ -1052,7 +1052,7 @@ header .main-header-cover .swiper-slide img {
 }
 
 .about-sec2 {
-  background: url(/src/img/shaking\ hands.svg);
+  background: url(./img/shaking\ hands.svg);
   background-color: #1B1B72;
   color: rgba(255, 255, 255, 0.926);
   background-repeat: no-repeat;
@@ -1156,7 +1156,7 @@ header .main-header-cover .swiper-slide img {
 }
 #apwen-abuja .apwen-event .counter-area .counter-sec .counter {
   margin: 2rem 1rem 1rem 0;
-  background-image: url(../img/little-cycle.svg);
+  background-image: url(./img/little-cycle.svg);
   background-repeat: no-repeat;
   background-size: 4.1rem;
   background-position: top left;
