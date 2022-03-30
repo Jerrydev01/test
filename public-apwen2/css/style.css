@@ -708,10 +708,6 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   width: 100vw;
-  background: url(../img/blur-bg.png);
-  background-size: cover cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: #1b1b72;
   overflow-x: hidden;
 }
@@ -745,7 +741,7 @@ span {
 /*============== HEADER/HERO SECTION=======================*/
 .header-sec {
   padding: 4rem 10rem;
-  background-image: url(..img/bg-header.png);
+  background-image: url(../img/bg-header.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -775,13 +771,13 @@ span {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
   margin-left: 2rem;
 }
 .header-sec .nav-section ul .donate-btn a {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 .header-sec .nav-section ul .donate-btn a:hover {
   opacity: 0.5;
@@ -817,7 +813,7 @@ span {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
   display: flex;
@@ -890,7 +886,7 @@ span {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
   display: block;
@@ -954,7 +950,7 @@ span {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
   position: relative;
@@ -986,7 +982,7 @@ span {
 #team-sec {
   background-color: #1b1b72;
   padding-block: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #team-sec .team-section {
   padding: 4rem 10rem;
@@ -1013,7 +1009,7 @@ span {
   position: relative;
   border-radius: 1.5rem;
   color: #020c19;
-  background-image: url(/src/img/blur-bg.png);
+  background-image: url(../img/blur-bg.png);
   background-repeat: no-repeat;
   background-size: cover cover;
   background-position: center;
@@ -1042,7 +1038,7 @@ span {
   top: 0;
 }
 #team-sec .mySwiperTeam .swiper-team .swiper-team-slider .team-area .social-team a {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   background-color: #1b1b72;
   padding: 1rem;
   margin: 0.5rem;
@@ -1064,7 +1060,7 @@ span {
   top: 56%;
 }
 #team-sec .mySwiperTeam .swiper-team .swiper-team-slider .team-area .link-team a {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   background-color: #1b1b72;
   padding: 2rem;
   margin: 0.5rem;
@@ -1140,7 +1136,7 @@ span {
   gap: 3rem;
 }
 #pricing .apwen-pricing-card .pricing-card {
-  background-image: url(..img/circle-card.svg);
+  background-image: url(../img/circle-card.svg);
   background-repeat: no-repeat;
   background-size: 2rem;
   background-position: 22rem 1rem;
@@ -1166,32 +1162,32 @@ span {
   margin: 0.5rem;
   background-color: #eb058b;
   border-radius: 50%;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #pricing .apwen-pricing-card .pricing-card .pricing-btn {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
   background-color: #eb058b;
   margin-bottom: 1rem;
 }
 #pricing .apwen-pricing-card .pricing-card .pricing-btn a {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #pricing .apwen-pricing-card .pricing-card:hover {
   transition: all 0.5s ease;
   background-color: #eb058b;
   transform: scale(1.1);
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #pricing .apwen-pricing-card .pricing-card:hover .level-sec p {
   color: #1b1b72;
 }
 #pricing .apwen-pricing-card .pricing-card:hover p {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #pricing .apwen-pricing-card .pricing-card:hover ul li > i {
   background-color: #1b1b72;
@@ -1200,12 +1196,12 @@ span {
   background-color: #1b1b72;
   padding: 1rem 1.4rem;
   border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   box-shadow: 0px 0px 9px -1px #020C19;
   transition: background-color 0.5s ease;
 }
 #pricing .apwen-pricing-card .pricing-card:hover .pricing-btn a {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
 }
 #pricing .apwen-pricing-card .pricing-card:hover .para {
   color: #471B72;
@@ -1226,7 +1222,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.926);
+  background-color: white;
   margin: 0 auto;
   top: -0.8rem;
   right: 50%;
@@ -1235,7 +1231,7 @@ span {
 }
 
 #testimonials {
-  background-image: url(/src/img/qoute-bg.svg);
+  background-image: url(../img/qoute-bg.svg);
   background-repeat: no-repeat;
   background-position: center right;
   padding: 4rem 10rem;
@@ -1261,7 +1257,7 @@ span {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   text-align: center;
   box-shadow: 0px 0px 9px -1px #020C19;
   padding: 0 3rem 0rem 3rem;
@@ -1296,9 +1292,9 @@ span {
   justify-content: center;
 }
 
-/*================footer section =================*/
+/*============== ==footer section =================*/
 #faq-section {
-  background-image: url(..img/bg-color2.png);
+  background-image: url(../img/bg-color2.png);
   background-size: cover cover;
 }
 #faq-section .faq-area {
@@ -1315,7 +1311,7 @@ span {
 }
 
 .faq-container {
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 10rem 4rem 10rem;
@@ -1349,7 +1345,7 @@ span {
 .faq-container .faq .faq-icon i {
   font-size: 1.5rem;
   margin-top: 0.3rem;
-  background-color: rgba(255, 255, 255, 0.926);
+  background-color: white;
   padding: 0.5rem;
   box-shadow: 0 0 0.5rem #1b1b72;
   border-radius: 50%;
@@ -1404,7 +1400,7 @@ span {
 }
 #footer .foot-end .logo-foot .foot-icon a:hover {
   background-color: #eb058b;
-  color: rgba(255, 255, 255, 0.926);
+  color: white;
   border-radius: 50%;
 }
 #footer .copyright {
@@ -1449,7 +1445,7 @@ span {
 
   .header-sec {
     padding: 3rem 3rem;
-    background-image: url(..img/bg-header.png);
+    background-image: url(../img/bg-header.png);
     background-position: center 40rem;
   }
   .header-sec text-sec,
@@ -1534,7 +1530,7 @@ span {
     gap: 1rem;
   }
   #pricing .apwen-pricing-card .pricing-card {
-    background-image: url(..img/circle-card.svg);
+    background-image: url(../img/circle-card.svg);
     background-position: 21rem 1rem;
     margin-top: 0;
   }
@@ -1621,10 +1617,7 @@ span {
     left: -100%;
     width: 100vw;
     height: 100vh;
-    background-image: url(..img/blur-bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover cover;
+    background-color: white;
     text-align: center;
     transition: 0.5s ease;
     padding-bottom: 2rem;
@@ -1683,7 +1676,7 @@ span {
     background-color: #1b1b72;
     padding: 1rem 1.4rem;
     border-radius: 2rem;
-    color: rgba(255, 255, 255, 0.926);
+    color: white;
     box-shadow: 0px 0px 9px -1px #020C19;
     transition: background-color 0.5s ease;
     position: relative;
@@ -1732,7 +1725,7 @@ span {
   }
   #pricing .apwen-pricing-card .pricing-card {
     margin-top: 0;
-    background-image: url(..img/circle-card.svg);
+    background-image: url(../img/circle-card.svg);
     background-position: 20rem 1rem;
   }
 
