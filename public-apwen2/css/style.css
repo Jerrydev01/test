@@ -794,7 +794,7 @@ span {
   width: 2.5rem;
   height: 0.3rem;
   margin-block: 0.5rem;
-  background-color: #1b1b72;
+  background-color: #eb058b;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -1008,11 +1008,8 @@ span {
 #team-sec .mySwiperTeam .swiper-team .swiper-team-slider .team-area {
   position: relative;
   border-radius: 1.5rem;
-  color: #020c19;
-  background-image: url(../img/blur-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover cover;
-  background-position: center;
+  color: #1b1b72;
+  background-color: white;
   box-shadow: 0px 0px 9px -1px #020c19;
   margin: 1.5rem;
   text-align: center;
@@ -1726,7 +1723,11 @@ span {
   #pricing .apwen-pricing-card .pricing-card {
     margin-top: 0;
     background-image: url(../img/circle-card.svg);
-    background-position: 20rem 1rem;
+    background-position: top right 1rem;
+    width: 60%;
+  }
+  #pricing .apwen-pricing-card .pricing-card:hover {
+    transform: translateY(-10px);
   }
 
   #testimonials {
