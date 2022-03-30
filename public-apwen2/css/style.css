@@ -745,7 +745,7 @@ span {
 /*============== HEADER/HERO SECTION=======================*/
 .header-sec {
   padding: 4rem 10rem;
-  background-image: url(/src/img/bg-header.png);
+  background-image: url(..img/bg-header.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1140,7 +1140,7 @@ span {
   gap: 3rem;
 }
 #pricing .apwen-pricing-card .pricing-card {
-  background-image: url(/src/img/circle-card.svg);
+  background-image: url(..img/circle-card.svg);
   background-repeat: no-repeat;
   background-size: 2rem;
   background-position: 22rem 1rem;
@@ -1257,7 +1257,7 @@ span {
   margin: 5rem 3rem 3rem 0;
 }
 #testimonials .mySwiperTestimonials .swiper-testimonials-container .swiper-testimony .t-section {
-  background-image: url(/src/img/pattern.svg);
+  background-image: url(../img/pattern.svg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1296,9 +1296,9 @@ span {
   justify-content: center;
 }
 
-/*============== ==footer section =================*/
+/*================footer section =================*/
 #faq-section {
-  background-image: url(/src/img/bg-color2.png);
+  background-image: url(..img/bg-color2.png);
   background-size: cover cover;
 }
 #faq-section .faq-area {
@@ -1449,7 +1449,7 @@ span {
 
   .header-sec {
     padding: 3rem 3rem;
-    background-image: url(/src/img/bg-header.png);
+    background-image: url(..img/bg-header.png);
     background-position: center 40rem;
   }
   .header-sec text-sec,
@@ -1534,7 +1534,7 @@ span {
     gap: 1rem;
   }
   #pricing .apwen-pricing-card .pricing-card {
-    background-image: url(/src/img/circle-card.svg);
+    background-image: url(..img/circle-card.svg);
     background-position: 21rem 1rem;
     margin-top: 0;
   }
@@ -1621,7 +1621,7 @@ span {
     left: -100%;
     width: 100vw;
     height: 100vh;
-    background-image: url(/src/img/blur-bg.png);
+    background-image: url(..img/blur-bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover cover;
@@ -1732,7 +1732,7 @@ span {
   }
   #pricing .apwen-pricing-card .pricing-card {
     margin-top: 0;
-    background-image: url(/src/img/circle-card.svg);
+    background-image: url(..img/circle-card.svg);
     background-position: 20rem 1rem;
   }
 
