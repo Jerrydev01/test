@@ -1292,7 +1292,8 @@ span {
 /*============== ==footer section =================*/
 #faq-section {
   background-image: url(../img/bg-color2.png);
-  background-size: cover cover;
+  background-size: cover;
+  background-position: center;
 }
 #faq-section .faq-area {
   padding: 4rem 10rem;
