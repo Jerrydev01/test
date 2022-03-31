@@ -1930,7 +1930,7 @@ textarea {
   }
   #about-sec .about-sub-sec p {
     text-align: center;
-    max-width: 6vw;
+    max-width: 68vw;
     margin: 2rem auto;
   }
   #about-sec .video-area {
@@ -1952,7 +1952,7 @@ textarea {
   }
   #gallery .gallery-sec p {
     text-align: center;
-    max-width: 6vw;
+    max-width: 68vw;
     margin: 2rem auto;
   }
   #gallery .gallery-grid {
@@ -1997,7 +1997,7 @@ textarea {
   }
   #pricing .price-section p {
     text-align: center;
-    max-width: 6vw;
+    max-width: 68vw;
     margin: 2rem auto;
   }
   #pricing .plan-area {
@@ -2084,7 +2084,7 @@ textarea {
   }
   #contact .contact-header p {
     text-align: center;
-    max-width: 6vw;
+    max-width: 68vw;
     margin: 2rem auto;
   }
   #contact .contact-container {
