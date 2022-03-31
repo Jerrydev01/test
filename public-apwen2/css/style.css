@@ -1349,6 +1349,7 @@ button, input, label, select, textarea {
 }
 #testimonials .mySwiperTestimonials .swiper-testimonials-container .swiper-testimony .t-section {
   background-image: url(../img/pattern.svg);
+  background-color: #1b1b72;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2100,6 +2101,7 @@ textarea {
   #contact .contact-container .contact-form {
     position: relative;
     top: -1rem;
+    left: 0;
     z-index: 0;
     margin: 0rem 2rem;
   }
