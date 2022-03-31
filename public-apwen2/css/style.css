@@ -695,7 +695,7 @@ button.swiper-pagination-bullet {
 }
 
 /*==============  SECTION=======================*/
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -710,6 +710,7 @@ body {
   width: 100vw;
   color: #1b1b72;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 h1 {
@@ -775,11 +776,11 @@ button, input, label, select, textarea {
 }
 .header-sec .nav-section ul .donate-btn {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -823,11 +824,11 @@ button, input, label, select, textarea {
 }
 .header-sec .header-btn {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -902,11 +903,11 @@ button, input, label, select, textarea {
 }
 #about-sec a {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -972,11 +973,11 @@ button, input, label, select, textarea {
 }
 #gallery .gallery-grid a {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -1246,11 +1247,11 @@ button, input, label, select, textarea {
 }
 #pricing .apwen-pricing-card .pricing-card .pricing-btn {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -1280,11 +1281,11 @@ button, input, label, select, textarea {
 }
 #pricing .apwen-pricing-card .pricing-card:hover .pricing-btn {
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -1618,6 +1619,7 @@ button, input, label, select, textarea {
   width: 100%;
   resize: none;
   outline: none;
+  margin-top: 1rem;
   border: 0;
   color: #1b1b72;
   border-bottom: 1px solid rgba(27, 27, 114, 0.678);
@@ -1637,11 +1639,11 @@ button, input, label, select, textarea {
 #contact .contact-container .contact-form form button {
   margin-top: 2rem;
   background: #0b1b72;
-  background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-  background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -1834,15 +1836,15 @@ button, input, label, select, textarea {
 /* Smartphones  320px - 670px */
 @media only screen and (min-device-width: 320px) and (max-device-width: 673px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   a {
@@ -1850,16 +1852,19 @@ button, input, label, select, textarea {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   button,
 input,
-label,
 select,
 textarea {
     font-family: inherit;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+  }
+
+  label {
+    font-size: 1.4rem;
   }
 
   .header-sec {
@@ -1870,11 +1875,11 @@ textarea {
 .header-sec h1 {
     margin-top: 1rem;
     text-align: center;
-    max-width: 75vw;
+    max-width: 80vw;
   }
   .header-sec p {
     text-align: center;
-    max-width: 60vw;
+    max-width: 70vw;
   }
   .header-sec .mySwiperHeader {
     width: 75vw;
@@ -1925,7 +1930,7 @@ textarea {
   }
   #about-sec .about-sub-sec p {
     text-align: center;
-    max-width: 60vw;
+    max-width: 6vw;
     margin: 2rem auto;
   }
   #about-sec .video-area {
@@ -1947,7 +1952,7 @@ textarea {
   }
   #gallery .gallery-sec p {
     text-align: center;
-    max-width: 60vw;
+    max-width: 6vw;
     margin: 2rem auto;
   }
   #gallery .gallery-grid {
@@ -1956,11 +1961,11 @@ textarea {
   }
   #gallery .gallery-grid a {
     background: #0b1b72;
-    background-image: -webkit-linear-gradient(top, #0b1b72, #eb058b);
-    background-image: -moz-linear-gradient(top, #0b1b72, #eb058b);
-    background-image: -ms-linear-gradient(top, #0b1b72, #eb058b);
-    background-image: -o-linear-gradient(top, #0b1b72, #eb058b);
-    background-image: linear-gradient(to bottom, #0b1b72, #eb058b);
+    background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+    background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+    background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+    background: -o-linear-gradient(top, #0b1b72, #eb058b);
+    background: linear-gradient(to bottom, #0b1b72, #eb058b);
     -webkit-border-radius: 9;
     -moz-border-radius: 9;
     border-radius: 9px;
@@ -1992,7 +1997,7 @@ textarea {
   }
   #pricing .price-section p {
     text-align: center;
-    max-width: 60vw;
+    max-width: 6vw;
     margin: 2rem auto;
   }
   #pricing .plan-area {
@@ -2079,7 +2084,7 @@ textarea {
   }
   #contact .contact-header p {
     text-align: center;
-    max-width: 60vw;
+    max-width: 6vw;
     margin: 2rem auto;
   }
   #contact .contact-container {
@@ -2104,5 +2109,11 @@ textarea {
     left: 0;
     z-index: 0;
     margin: 0rem 2rem;
+  }
+  #contact .contact-container .contact-form .input-grid .input-area:nth-child(3) {
+    grid-column: span 2;
+  }
+  #contact .contact-container .contact-form .input-grid .input-area:nth-child(4) {
+    grid-column: span 2;
   }
 }
