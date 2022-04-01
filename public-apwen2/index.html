@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApwenAbujachaper</title>
 
+ <!-- ========  favicon ============== -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!--========================== google fonts ==========================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +19,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- =========== local css ================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
     <!-- ================= HEADER SECTION ================= -->
     <header id="header">
         <div class="header-sec">
-      
+
 
             <nav class="nav-section">
-                <div> <a href="" class="logo">LOGO</a></div>
+                <div> <a href="" class="logo"><img src="./img/logo.svg" alt="apwenabujachaper logo"></a></div>
                 <ul class="menue-list">
                     <li class="list-items"><a href="">Home</a></li>
                     <li class="list-items"><a href="contact.html">Contact</a></li>
@@ -46,8 +48,7 @@
 
             <!--======================= hero text ====================-->
             <div class="text-sec">
-                <h1 class=""> Welcome to the Official Page Of <span class="color-text">ApwenAbujachaper</span>, You are
-                    Home !!</h1>
+                <h1 class=""> Welcome to the Official Page Of <span class="type-text"></span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Placeat, velit consequatur. </p>
                 <a href="" class="header-btn">Become a Member </a>
@@ -158,17 +159,17 @@
     </section>
     <!--======================= team section =======================-->
     <section class="team-sec">
-          <!-- ==========animated lines================ -->
-          <div class="lines">
+        <!-- ==========animated lines================ -->
+        <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <!-- ==========animated lines================ -->
         <div class="team-section">
-              
+
             <h4> TEAM SECTION</h4>
-            <h2>Meet the Amazing Women in Engineering</h2>
+            <h2>Meet the Amazing Women in <span>Engineering</span></h2>
         </div>
         <!-- Swiper -->
         <div class="swiper mySwiperTeam">
@@ -325,7 +326,7 @@
                         dolor sit.</li>
                 </ul>
                 <div class="pricing-btn">
-                    <a href="">Pay Now</a>
+                    <a href="">Pay Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <small><i class="fa-solid fa-heart"></i>
                     ApwenAbujachaper</small>
@@ -353,7 +354,7 @@
                         dolor sit.</li>
                 </ul>
                 <div class="pricing-btn">
-                    <a href="">Pay Now</a>
+                    <a href="">Pay Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <small><i class="fa-solid fa-heart"></i>
                     ApwenAbujachaper</small>
@@ -381,7 +382,7 @@
                         dolor sit.</li>
                 </ul>
                 <div class="pricing-btn">
-                    <a href="">Pay Now</a>
+                    <a href="">Pay Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <small><i class="fa-solid fa-heart"></i>
                     ApwenAbujachaper</small>
@@ -559,7 +560,8 @@
             <!-- ================== COPYRIGHT ================= -->
             <div class="copyright">
                 <p> Copyright &copy; 2021-
-                    <script>document.write(new Date().getFullYear())</script> <a href="index.html">apwenabujachaper.org</a>
+                    <script>document.write(new Date().getFullYear())</script> <a
+                        href="index.html">apwenabujachaper.org</a>
                 </p>
                 <p>Designed and Developed by <a href="">ZEUS</a></p>
             </div>
@@ -570,7 +572,17 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
-    
+
+    <!-- typing text scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".type-text", {
+            strings: ["ApwenAbujachapter."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
 
 </body>
 
