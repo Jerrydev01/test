@@ -695,7 +695,9 @@ button.swiper-pagination-bullet {
 }
 
 /*==============  SECTION=======================*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -740,9 +742,91 @@ span {
   color: #eb058b;
 }
 
-button, input, label, select, textarea {
+button,
+input,
+label,
+select,
+textarea {
   font-family: inherit;
   font-size: 1.6rem;
+}
+
+/*============ scroll bar ============*/
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eb058b;
+  border-radius: 5rem;
+}
+
+/*======== scroll back to top button ============*/
+#myBtn i {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 50;
+  border-radius: 50%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: #eb058b;
+  background-color: transparent;
+  cursor: pointer;
+  animation: btnTop 1s ease infinite alternate;
+}
+@keyframes btnTop {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/*============ preloader ============*/
+#preloader {
+  background-color: #1b1b72;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#preloader div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #eb058b;
+  animation: preloader 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+#preloader div:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.8;
+}
+#preloader div:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.6;
+}
+#preloader div:nth-child(4) {
+  animation-delay: 0.2s;
+  opacity: 0.4;
+}
+@keyframes preloader {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-80px);
+  }
 }
 
 /*============== HEADER/HERO SECTION=======================*/
@@ -1042,6 +1126,111 @@ button, input, label, select, textarea {
   font-size: 1.2rem;
 }
 
+.gallery {
+  min-height: 100vh;
+  display: block;
+  width: 100%;
+}
+.gallery .gallery-sec {
+  text-align: center;
+  max-width: 40vw;
+  margin: 2rem auto;
+}
+.gallery .gallery-sec h4 {
+  letter-spacing: 3px;
+  text-align: center;
+  padding-block: 2rem 3rem;
+}
+.gallery .gallery-sec p {
+  text-align: center;
+  max-width: 35vw;
+  margin: 2rem auto;
+}
+.gallery .container-gallery {
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery .container-gallery .full-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(27, 27, 114, 0.857);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.gallery .container-gallery .full-img span {
+  position: absolute;
+  font-size: 3rem;
+  right: 5%;
+  top: 15%;
+  color: white;
+  cursor: pointer;
+}
+.gallery .container-gallery .full-img img {
+  width: 90%;
+  max-width: 50rem;
+}
+.gallery .container-gallery .row-gallery .gallery-filter {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
+.gallery .container-gallery .row-gallery .gallery-filter .filter-item {
+  display: inline-block;
+  margin-block: 1rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: #1b1b72;
+  border: 2px solid #1b1b72;
+  transition: all 0.3s ease;
+}
+.gallery .container-gallery .row-gallery .gallery-filter .filter-item:hover, .gallery .container-gallery .row-gallery .gallery-filter .filter-item:focus {
+  background-color: transparent;
+  border: 2px solid #eb058b;
+  color: #1b1b72;
+  font-weight: bold;
+}
+.gallery .container-gallery .row-gallery .gallery-filter .filter-item.active {
+  background-color: #eb058b;
+}
+.gallery .container-gallery .row-gallery .grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.gallery .container-gallery .row-gallery .grid-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 0px 25px -1px #eb058b;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .container-gallery .row-gallery .grid-gallery .gallery-item img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 1.5rem;
+}
+.gallery .container-gallery .row-gallery .grid-gallery .gallery-item.show {
+  animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gallery .container-gallery .row-gallery .grid-gallery .gallery-item.hide {
+  display: none;
+}
+
 /*============== TEAM SECTION=======================*/
 .me {
   position: sticky;
@@ -1232,17 +1421,6 @@ button, input, label, select, textarea {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s 200ms ease;
-}
-#team-sec2 .myTeam .swiper-team .swiper-team-slider .team-area .social-team a i {
-  animation: icon 2s ease-in-out infinite;
-}
-@keyframes icon {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
 }
 #team-sec2 .myTeam .swiper-team .swiper-team-slider .team-area .social-team a:hover {
   background-color: #eb058b;
@@ -1666,6 +1844,10 @@ button, input, label, select, textarea {
   justify-content: space-between;
   align-items: center;
 }
+#footer .foot-end .logo-foot .logo img {
+  max-width: 4rem;
+  aspect-ratio: 1/1;
+}
 #footer .foot-end .logo-foot ul {
   display: flex;
 }
@@ -1802,7 +1984,11 @@ button, input, label, select, textarea {
 #contact .contact-container .contact-form form .input-grid .input-area {
   margin-top: 2rem;
 }
-#contact .contact-container .contact-form form #firstname, #contact .contact-container .contact-form form #lastname, #contact .contact-container .contact-form form #email, #contact .contact-container .contact-form form #phone, #contact .contact-container .contact-form form #message {
+#contact .contact-container .contact-form form #firstname,
+#contact .contact-container .contact-form form #lastname,
+#contact .contact-container .contact-form form #email,
+#contact .contact-container .contact-form form #phone,
+#contact .contact-container .contact-form form #message {
   width: 100%;
   resize: none;
   outline: none;
@@ -1813,8 +1999,33 @@ button, input, label, select, textarea {
   transition: all 0.5s ease;
   cursor: pointer;
 }
-#contact .contact-container .contact-form form #firstname:hover, #contact .contact-container .contact-form form #lastname:hover, #contact .contact-container .contact-form form #email:hover, #contact .contact-container .contact-form form #phone:hover, #contact .contact-container .contact-form form #message:hover {
+#contact .contact-container .contact-form form #firstname:hover,
+#contact .contact-container .contact-form form #lastname:hover,
+#contact .contact-container .contact-form form #email:hover,
+#contact .contact-container .contact-form form #phone:hover,
+#contact .contact-container .contact-form form #message:hover {
   border-bottom: 1px solid #eb058b;
+}
+#contact .contact-container .contact-form form #firstname:invalid,
+#contact .contact-container .contact-form form #lastname:invalid,
+#contact .contact-container .contact-form form #email:invalid,
+#contact .contact-container .contact-form form #phone:invalid,
+#contact .contact-container .contact-form form #message:invalid {
+  border-bottom: 1px solid rgba(248, 2, 27, 0.922);
+}
+#contact .contact-container .contact-form form #firstname:invalid:required,
+#contact .contact-container .contact-form form #lastname:invalid:required,
+#contact .contact-container .contact-form form #email:invalid:required,
+#contact .contact-container .contact-form form #phone:invalid:required,
+#contact .contact-container .contact-form form #message:invalid:required {
+  border-bottom: 1px solid #eb058b;
+}
+#contact .contact-container .contact-form form #firstname:valid,
+#contact .contact-container .contact-form form #lastname:valid,
+#contact .contact-container .contact-form form #email:valid,
+#contact .contact-container .contact-form form #phone:valid,
+#contact .contact-container .contact-form form #message:valid {
+  border-bottom: 1px solid #1b1b72;
 }
 #contact .contact-container .contact-form form .form-message {
   margin-top: 5rem;
@@ -1870,9 +2081,13 @@ button, input, label, select, textarea {
     font-size: 1.6rem;
   }
 
+  ::-webkit-scrollbar {
+    width: 0rem;
+  }
+
   .header-sec {
     background-image: url(../img/bg-header.png);
-    background-position: center 40rem;
+    background-position: center 25rem;
   }
   .header-sec text-sec,
 .header-sec h1 {
@@ -1939,6 +2154,15 @@ button, input, label, select, textarea {
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: 1fr 1fr;
+  }
+
+  .gallery .gallery-sec {
+    text-align: center;
+    max-width: 60vw;
+    margin: 2rem auto;
+  }
+  .gallery .container-gallery .row-gallery .grid-gallery {
+    grid-template-columns: 1fr 1fr;
   }
 
   .team-sec .team-section {
@@ -2077,6 +2301,14 @@ textarea {
     font-size: 1.4rem;
   }
 
+  #preloader {
+    background-size: 50%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0rem;
+  }
+
   .header-sec {
     background-image: none;
   }
@@ -2199,6 +2431,15 @@ textarea {
   }
   #gallery .img-logo {
     display: none;
+  }
+
+  .gallery .gallery-sec {
+    text-align: center;
+    max-width: 75vw;
+    margin: 2rem auto;
+  }
+  .gallery .container-gallery .row-gallery .grid-gallery {
+    grid-template-columns: 1fr;
   }
 
   .team-sec .team-section {
