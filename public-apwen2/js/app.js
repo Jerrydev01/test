@@ -1,3 +1,26 @@
+
+//  preloader
+
+let loader = document.querySelector('#preloader');
+console.log(loader);
+window.addEventListener('load', function() {
+loader.style.display='none';
+})
+
+//  preloader end
+
+// scroll back to top of page
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
 // nave bar menue
 const navMenu = document.querySelector('.nav-btn');
 const list = document.querySelector('.menue-list');
@@ -123,7 +146,6 @@ var swiper = new Swiper(".mySwiperTeam", {
         },
     }
   });
-
   // show and hid faq
 
   const faq = document.querySelectorAll(".faq");
@@ -133,3 +155,4 @@ var swiper = new Swiper(".mySwiperTeam", {
       faq.classList.toggle('open');
     })
   });
+
