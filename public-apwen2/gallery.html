@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Official page of the Association of Professional Women of Engineers of Nigeria, Abuja Chapter ">
     <title>ApwenAbujachaper | gallery</title>
 
-     <!-- ========  favicon ============== -->
-     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- ========  favicon ============== -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
     <!--========================== google fonts ==========================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +21,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- =========== local css ================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
+    <!-- ======== preloader ========-->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+     </div>
+       <!-- scroll back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
     <!-- ================= HEADER SECTION ================= -->
     <header id="header">
         <div class="header-sec">
 
 
             <nav class="nav-section">
-                <div> <a href="" class="logo">LOGO</a></div>
+                <div> <a href="" class="logo"><img src="./img/logo.svg" alt="apwenabujachaper logo"></a></div>
                 <ul class="menue-list">
                     <li class="list-items"><a href="index.html">Home</a></li>
                     <li class="list-items"><a href="contact.html">Contact</a></li>
@@ -89,202 +99,666 @@
             </div>
         </div>
     </section>
- 
- 
- <!-- ==================== TESTIMONIALS ====================== -->
-  <section id="testimonials">
-    <div class="testimony">
-        <h4>TESTIMONIALS</h4>
-        <h2 class="">Our Members Enjoy <span>Our Process</span></h2>
-    </div>
-    <!-- Swiper -->
-    <div class="swiper mySwiperTestimonials">
-        <div class="swiper-wrapper swiper-testimonials-container">
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
 
-                    <div class="t-text">
+    <section class="gallery">
+        <div class="gallery-sec">
+            <h4>GALLERY</h4>
+            <h2 class="">Welcome to Our <span>Happy Moments.</span></h2>
+        </div>
+        <div class="container-gallery">
+            <div class="full-img" id="fullImgBox">
+                <img id="fullImg" src="./img/apwen_img/apwen/20210211_135424.jpg" alt="">
+                <span class="x" onclick="closeFullImg();">X</span>
+            </div>
+            <div class="row-gallery">
+                <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">
+                        All
+                    </span>
+                    <span class="filter-item" data-filter="apwen">
+                        Apwen
+                    </span>
+                    <span class="filter-item" data-filter="awardNight">
+                        Award/Banquet
+                    </span>
+                    <span class="filter-item" data-filter="lafarge">
+                        Lafarge
+                    </span>
+                    <span class="filter-item" data-filter="visits">
+                        Visits
+                    </span>
+                    <span class="filter-item" data-filter="others">
+                        Others
+                    </span>
+                </div>
+                <!-- gallery area -->
+                <!-- =========starts========= -->
+                <div class="grid-gallery">
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/20210211_135424.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210302-WA0145.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210309-WA0136.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210309-WA0148.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210309-WA0152.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210311-WA0075.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210311-WA0081.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210311-WA0082.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210311-WA0083.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210425-WA0007.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210427-WA0034.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210427-WA0100.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210814-WA0019.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210814-WA0022.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/Screenshot_20210814-150117_Word.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item apwen">
+                        <div class="gallery-item-inner">
+                           <img src="./img/apwen_img/apwen/IMG-20210302-WA0145.jpg" alt="" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    
+                    <!-- =========apwenabujachapter pics end========= -->
 
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
-                    </div>
 
-                </div>
-            </div>
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
-                    <div class="t-text">
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
+                    <!-- =========starts========= -->
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1321.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
-                    <div class="t-text">
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1329.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
-                    <div class="t-text">
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1306.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
-                    <div class="t-text">
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1332.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-testimony">
-                <div class="t-section">
-                    <div class=""> <img src="./img/img3.jpg" alt=""></div>
-                    <div class="t-text">
-                        <p><strong>Engr. susan</strong></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
-                        <small><strong>secretary</strong></small>
-                        <img src="./img/star-rating.png" alt="">
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1334.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
                     </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1336.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1345.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1344.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1348.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1354.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1380.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1384.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1396.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_1399.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_6935.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_6991.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7014.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7245.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7198.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7262.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7329.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7369.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item awardNight">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/DINNER/MSP_7374.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <!-- =========dinner/banquet end========= -->
+
+
+                    <!-- =========starts========= -->
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0015.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210602-WA0074.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0014.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0016.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0018.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0020.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0046.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0051.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0072.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0090.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0098.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210603-WA0118.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210606-WA0125.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210606-WA0153.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210606-WA0167.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item lafarge">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Lafarge/IMG-20210606-WA0172.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <!-- =========Lafarge end========= -->
+
+
+                    <!-- =========starts========= -->
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/20210216_105455-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/20210212_145312.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/20210216_105945-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210521-WA0105.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210521-WA0106.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210521-WA0113.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0037.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0039.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0041.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0043.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0067.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0048.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0077.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item visits">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/Visits/IMG-20210812-WA0078.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                   
+                    <!-- =========visits end========= -->
+
+
+
+                    <!-- =========starts========= -->
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/20210330_122053-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/20210330_172117-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/IMG-20210615-WA0133.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/IMG20210521130500-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/MSP_5958.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/IMG-20210615-WA0133.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/MSP_6081.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/monday8-min.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    <div class="gallery-item others">
+                        <div class="gallery-item-inner">
+                            <img src="./img/apwen_img/other/sdasd-compressed.jpg" alt="dinner" onclick="openFullImg(this.src);">
+                        </div>
+                    </div>
+                    
+                    <!-- =========others end========= -->
                 </div>
+
             </div>
 
         </div>
-        <div class="swiper-button-next btn.swipe"><img src="./img/angle-right.svg" alt=""></div>
-        <div class="swiper-button-prev btn.swipe"><img src="./img/angle-left.svg" alt=""></div>
-    </div>
-</section>
-
-<!-- ============== FAQ SECTION==================== -->
-<section id="faq-section">
-    <div class="faq-area">
-        <h4>ARE YOU CONFUSED?</h4>
-        <h2>See Our Frequently Asked <span>Questions</span></h2>
-    </div>
-    <div class="container faq-container">
-        <div class="faq open">
-            <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-            <div class="question-answer">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                    reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                    nostrum ut?</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-            <div class="question-answer">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                    reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                    nostrum ut?</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-            <div class="question-answer">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                    reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                    nostrum ut?</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-            <div class="question-answer">
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                    reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                    nostrum ut?</p>
-            </div>
-        </div>
+    </section>
 
 
-    </div>
-    <!-- =================CONTACT AREA ======================== -->
-    <footer id="footer" role="contentinfo">
-        <div class="footer-grid">
-            <div class="foot-sec">
-                <h3>ABUJA OFFICE</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.lorem3. Lorem ipsum dolor sit</p>
-            </div>
-            <div class="foot-sec">
-                <h3>CONTACT</h3>
-                <P><a href="mailto:apwenabujachaper@gmal.com"><i class="fa-regular fa-envelope"></i>
-                        apwenabujachaper@gmal.com</a></P>
-                <p><a href="tel:+2347088888445"> <i class="fa-light fa-phone"></i>+2347088888445</a></p>
-            </div>
-            <div class="foot-sec">
-                <h3>EXTERBAL LINKS</h3>
-                <p><a href="">Apwen <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-                <p><a href="">COREN <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-            </div>
+
+
+
+
+
+
+
+
+
+    <!-- ==================== TESTIMONIALS ====================== -->
+    <section id="testimonials">
+        <div class="testimony">
+            <h4>TESTIMONIALS</h4>
+            <h2 class="">Our Members Enjoy <span>Our Process</span></h2>
         </div>
-        <hr>
-        <div class="foot-end">
-            <div class="logo-foot">
-                <p><a href="">LOGO</a></p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-                <p class="foot-icon">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <!-- Swiper -->
+        <div class="swiper mySwiperTestimonials">
+            <div class="swiper-wrapper swiper-testimonials-container">
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+
+                        <div class="t-text">
+
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+                        <div class="t-text">
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+                        <div class="t-text">
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+                        <div class="t-text">
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+                        <div class="t-text">
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-testimony">
+                    <div class="t-section">
+                        <div class=""> <img src="./img/img3.jpg" alt=""></div>
+                        <div class="t-text">
+                            <p><strong>Engr. susan</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus earum odio </p>
+                            <small><strong>secretary</strong></small>
+                            <img src="./img/star-rating.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next btn.swipe"><img src="./img/angle-right.svg" alt=""></div>
+            <div class="swiper-button-prev btn.swipe"><img src="./img/angle-left.svg" alt=""></div>
+        </div>
+    </section>
+
+    <!-- ============== FAQ SECTION==================== -->
+    <section id="faq-section">
+        <div class="faq-area">
+            <h4>ARE YOU CONFUSED?</h4>
+            <h2>See Our Frequently Asked <span>Questions</span></h2>
+        </div>
+        <div class="container faq-container">
+            <div class="faq open">
+                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
+                <div class="question-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
+                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
+                        nostrum ut?</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
+                <div class="question-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
+                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
+                        nostrum ut?</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
+                <div class="question-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
+                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
+                        nostrum ut?</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
+                <div class="question-answer">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
+                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
+                        nostrum ut?</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- =================CONTACT AREA ======================== -->
+        <footer id="footer" role="contentinfo">
+            <div class="footer-grid">
+                <div class="foot-sec">
+                    <h3>ABUJA OFFICE</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.lorem3. Lorem ipsum dolor sit</p>
+                </div>
+                <div class="foot-sec">
+                    <h3>CONTACT</h3>
+                    <P><a href="mailto:apwenabujachaper@gmal.com"><i class="fa-regular fa-envelope"></i>
+                            apwenabujachaper@gmal.com</a></P>
+                    <p><a href="tel:+2347088888445"> <i class="fa-light fa-phone"></i>+2347088888445</a></p>
+                </div>
+                <div class="foot-sec">
+                    <h3>EXTERBAL LINKS</h3>
+                    <p><a href="">Apwen <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p><a href="">COREN <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="foot-end">
+                <div class="logo-foot">
+                    <p><a href="" class="logo"><img src="./img/logo.svg" alt="apwenabujachaper logo"></a></p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                    <p class="foot-icon">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!-- ================== COPYRIGHT ================= -->
+            <div class="copyright">
+                <p> Copyright &copy; 2021-
+                    <script>document.write(new Date().getFullYear())</script> <a
+                        href="index.html">apwenabujachaper.org</a>
                 </p>
+                <p>Designed and Developed by <a href="">ZEUS</a></p>
             </div>
-        </div>
-        <!-- ================== COPYRIGHT ================= -->
-        <div class="copyright">
-            <p> Copyright &copy; 2021-
-                <script>document.write(new Date().getFullYear())</script> <a
-                    href="index.html">apwenabujachaper.org</a>
-            </p>
-            <p>Designed and Developed by <a href="">ZEUS</a></p>
-        </div>
-    </footer>
-</section>
+        </footer>
+    </section>
 
-<!-- ===========================javascript=============================== -->
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./js/app.js"></script>
+    <!-- ===========================javascript=============================== -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/gallery.js"></script>
 
-<!-- typing text scripts -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typed = new Typed(".type-text", {
-        strings: ["ApwenAbujachapter."],
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true,
-    });
-</script>
+
+    <!-- typing text scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".type-text", {
+            strings: ["ApwenAbujachapter."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
 
 </body>
 
