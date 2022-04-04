@@ -694,7 +694,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/*==============  SECTION=======================*/
+/*============== UTILITIES SECTION=======================*/
 *,
 *::before,
 *::after {
@@ -770,7 +770,7 @@ textarea {
   position: fixed;
   bottom: 2rem;
   right: 3rem;
-  z-index: 50;
+  z-index: 20;
   border-radius: 50%;
   padding: 1rem;
   border: none;
@@ -1796,45 +1796,38 @@ textarea {
 }
 
 .faq-container {
-  color: white;
+  color: #1b1b72;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 10rem 4rem 10rem;
 }
-.faq-container .faq {
-  display: flex;
-  justify-content: space-around;
+.faq-container #accordion {
   margin: 0 1rem 1rem 1rem;
   cursor: pointer;
-  gap: 1rem;
-  box-shadow: inset 0 0 0.5rem #1b1b72;
   padding: 2rem;
-  background-color: #1b1b72;
   border-radius: 0.5rem;
 }
-.faq-container .faq h3 {
+.faq-container #accordion li label {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 1.8rem;
+  font-weight: bold;
+  color: #eb058b;
+  border-bottom: 0.5px solid rgba(11, 26, 114, 0.402);
 }
-.faq-container .faq p {
-  padding-top: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1.3rem;
+.faq-container #accordion li input[type=radio] {
   display: none;
 }
-.faq-container .faq .open p {
-  display: block;
+.faq-container #accordion .content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
-.faq-container .faq .faq-icon {
-  align-self: flex-start;
-}
-.faq-container .faq .faq-icon i {
-  font-size: 1.5rem;
-  margin-top: 0.3rem;
-  background-color: white;
-  padding: 0.5rem;
-  box-shadow: 0 0 0.5rem #1b1b72;
-  border-radius: 50%;
-  color: #1b1b72;
+.faq-container #accordion input[type=radio]:checked + .content {
+  max-height: 40rem;
 }
 
 #footer {
@@ -2378,7 +2371,7 @@ textarea {
     text-align: center;
     transition: 0.5s ease;
     padding-bottom: 2rem;
-    z-index: 22;
+    z-index: 2222;
   }
   .header-sec .nav-section .menue-list a {
     font-size: 2rem;

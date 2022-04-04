@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Official page of the Association of Professional Women of Engineers of Nigeria, Abuja Chapter ">
+    <meta name="description"
+        content="Welcome to the Official page of the Association of Professional Women of Engineers of Nigeria, Abuja Chapter ">
     <title>ApwenAbujachaper</title>
 
- <!-- ========  favicon ============== -->
+    <!-- ========  favicon ============== -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!--========================== google fonts ==========================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,22 +21,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- =========== local css ================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
-<!-- ======== preloader ========-->
-<div id="preloader">
-    <div class="bouncer">
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
+    <!-- ======== preloader ========-->
+    <div id="preloader">
+        <div class="bouncer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="loader-text">
+            please wait...
+        </p>
     </div>
-     <p class="loader-text">
-        please wait...
-     </p>
-  </div>
 
     <!-- scroll back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
@@ -496,43 +497,44 @@
             <h4>ARE YOU CONFUSED?</h4>
             <h2>See Our Frequently Asked <span>Questions</span></h2>
         </div>
-        <div class="container faq-container">
-            <div class="faq open">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
+        <div class="faq-container">
+            <ul id="accordion">
+                <li>
+                    <label for="first">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                    </div>
+                </li>
+            </ul>
+               <ul id="accordion">
+                <li>
+                    <label for="second">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                    <input type="radio" name="accordion" id="second">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                    </div>
+                </li>
+               </ul>
+                <ul id="accordion">
+                    <li>
+                        <label for="third">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                        <input type="radio" name="accordion" id="third">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                        </div>
+                    </li>
+                </ul>
+           <ul id="accordion">
+            <li>
+                <label for="fourth">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                <input type="radio" name="accordion" id="fourth" >
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
                 </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
+            </li>
+           </ul>
+        </div>
 
 
         </div>
@@ -599,7 +601,7 @@
             loop: true,
         });
     </script>
-    
+
 
 </body>
 

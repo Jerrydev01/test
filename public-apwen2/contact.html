@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- =========== local css ================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -247,43 +247,44 @@
             <h4>ARE YOU CONFUSED?</h4>
             <h2>See Our Frequently Asked <span>Questions</span></h2>
         </div>
-        <div class="container faq-container">
-            <div class="faq open">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
+        <div class="faq-container">
+            <ul id="accordion">
+                <li>
+                    <label for="first">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                    </div>
+                </li>
+            </ul>
+               <ul id="accordion">
+                <li>
+                    <label for="second">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                    <input type="radio" name="accordion" id="second">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                    </div>
+                </li>
+               </ul>
+                <ul id="accordion">
+                    <li>
+                        <label for="third">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                        <input type="radio" name="accordion" id="third">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
+                        </div>
+                    </li>
+                </ul>
+           <ul id="accordion">
+            <li>
+                <label for="fourth">Lorem, ipsum dolor? <span>  <i class="fa-solid fa-chevron-down"></i></span></label>
+                <input type="radio" name="accordion" id="fourth" >
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi, mollitia quam vitae soluta odio!</p>
                 </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
-            <div class="faq">
-                <div class="faq-icon"> <i class="fa-solid fa-plus"></i></div>
-                <div class="question-answer">
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates et exercitationem unde
-                        reiciendis iure dignissimos consequatur at sequi, itaque cupiditate explicabo tenetur, vitae
-                        nostrum ut?</p>
-                </div>
-            </div>
+            </li>
+           </ul>
+        </div>
 
 
         </div>
@@ -327,7 +328,8 @@
             <!-- ================== COPYRIGHT ================= -->
             <div class="copyright">
                 <p> Copyright &copy; 2021-
-                    <script>document.write(new Date().getFullYear())</script> <a href="index.html">apwenabujachaper.org</a>
+                    <script>document.write(new Date().getFullYear())</script> <a
+                        href="index.html">apwenabujachaper.org</a>
                 </p>
                 <p>Designed and Developed by <a href="">ZEUS</a></p>
             </div>
@@ -349,6 +351,7 @@
             loop: true,
         });
     </script>
+
 
 </body>
 
