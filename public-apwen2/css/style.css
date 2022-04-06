@@ -1254,8 +1254,90 @@ textarea {
 }
 
 /*============== TEAM SECTION=======================*/
-.me {
-  position: sticky;
+.team-modal {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  box-shadow: inset 0px 0px 9px -1px #020c19;
+  z-index: 10;
+  padding: 4rem 10rem;
+  overflow-x: hidden;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity ease-in 0.3s, visibility linear 0.1s 0.3s, transform ease-in 0.3s;
+  transform: translateY(10px);
+}
+.team-modal:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease-in 0.3s 0.1s, visibility linear 0.2s;
+}
+.team-modal .modal-sec {
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+}
+.team-modal .modal-sec p {
+  padding: 1rem;
+}
+.team-modal .modal-sec img {
+  width: 100%;
+  object-fit: cover cover;
+  aspect-ratio: 1/1;
+  margin-bottom: 2rem;
+}
+.team-modal .modal-sec .image-modal {
+  position: relative;
+}
+.team-modal .modal-sec .image-modal .social-modal {
+  position: absolute;
+  background-color: white;
+  right: 0;
+  top: 20%;
+  display: flex;
+  padding: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  flex-direction: column;
+}
+.team-modal .modal-sec .image-modal .social-modal a {
+  color: white;
+  background-color: #1b1b72;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 0px 0px 9px -1px #020c19;
+  justify-content: center;
+}
+.team-modal .modal-sec .image-modal .social-modal a:hover {
+  background-color: #eb058b;
+}
+.team-modal .close-modal {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  padding: 1.5rem;
+  border-radius: 50% 50%;
+  box-shadow: 0px 0px 9px -1px #020c19;
+  clip-path: circle();
+  color: white;
+  background-color: #eb058b;
+  animation: pText ease-in-out 1s infinite alternate;
+}
+@keyframes pText {
+  from {
+    transform: scale(1.2);
+    background-color: #1b1b72;
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .team-sec {
@@ -1274,6 +1356,30 @@ textarea {
   letter-spacing: 3px;
   text-align: center;
   padding-block: 2rem 3rem;
+}
+.team-sec .gallery-btn a {
+  color: white;
+  background: #0b1b72;
+  background: -webkit-linear-gradient(top, #0b1b72, #eb058b);
+  background: -moz-linear-gradient(top, #0b1b72, #eb058b);
+  background: -ms-linear-gradient(top, #0b1b72, #eb058b);
+  background: -o-linear-gradient(top, #0b1b72, #eb058b);
+  background: linear-gradient(to bottom, #0b1b72, #eb058b);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: grid;
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.team-sec .gallery-btn a:hover {
+  opacity: 0.5;
+  border: 0;
+  transition: opacity 0.5s ease;
 }
 .team-sec .mySwiperTeam {
   width: 100%;
@@ -1297,12 +1403,13 @@ textarea {
 }
 .team-sec .mySwiperTeam .swiper-team .swiper-team-slider .team-area h3 {
   margin-block: 3rem 0.5rem;
+  padding-inline: 2rem;
 }
 .team-sec .mySwiperTeam .swiper-team .swiper-team-slider .team-area img {
-  height: 25rem;
+  max-height: 25rem;
   width: 100%;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit: cover cover;
   border-radius: 1.5rem;
   padding-bottom: 2rem;
   transition: all 0.5s 400ms ease;
@@ -1412,12 +1519,13 @@ textarea {
 }
 #team-sec2 .myTeam .swiper-team .swiper-team-slider .team-area h3 {
   margin-block: 3rem 0.5rem;
+  padding-inline: 2rem;
 }
 #team-sec2 .myTeam .swiper-team .swiper-team-slider .team-area img {
-  height: 25rem;
+  max-height: 25rem;
   width: 100%;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit: cover cover;
   border-radius: 1.5rem;
   padding-bottom: 2rem;
   transition: all 0.5s 400ms ease;
@@ -1502,6 +1610,7 @@ textarea {
   margin: auto;
   width: 90vw;
   height: 100%;
+  z-index: 0;
 }
 .lines .line {
   position: absolute;
@@ -1510,6 +1619,7 @@ textarea {
   top: 50%;
   left: 50%;
   background: rgba(27, 27, 114, 0);
+  z-index: 0;
 }
 .lines .line::after {
   content: "";
@@ -1519,7 +1629,7 @@ textarea {
   left: 0;
   width: 100%;
   top: -50%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, 75%, #ffffff 100%);
   animation: drop 7s 0s infinite;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
@@ -2279,6 +2389,13 @@ textarea {
 
   #team-sec2 .myTeam .swiper-team {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Smartphones  1024px - 1100px */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1100px) {
+  #team-sec2 .myTeam .swiper-team {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -2322,6 +2439,27 @@ textarea {
 
   ::-webkit-scrollbar {
     width: 0rem;
+  }
+
+  .team-modal {
+    margin-top: 2rem;
+    padding: 0 3rem 3rem 3rem;
+  }
+  .team-modal span {
+    align-self: flex-start;
+  }
+  .team-modal h3 {
+    padding-left: 1rem;
+  }
+  .team-modal a {
+    font-size: 1rem;
+  }
+  .team-modal .modal-sec .image-modal .social-modal {
+    background-color: rgba(255, 255, 255, 0.429);
+    padding: 0.5rem;
+  }
+  .team-modal .modal-sec .image-modal .social-modal a {
+    font-size: 1rem;
   }
 
   .header-sec {
